@@ -18,10 +18,12 @@ export default class Login extends Component {
                 </div>
 
                 <div className="form-group">
-                    <div className="custom-control custom-checkbox">
+                    
                         <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                    </div>
+                        Remember Me <label for = "chkRemember"></label>
+                        <input type = "checkbox"
+                            id = "chkRemember"
+                            value = "Remember" />
                 </div>
 
                 <button type="submit" className="btn btn-dark btn-lg btn-block">Sign in</button>
