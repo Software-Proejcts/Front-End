@@ -3,31 +3,31 @@ import HomeCard from '../ui/HomeCard';
 import {hashHistory} from 'react-router';
 export default class Home extends Component {
 
-    homeCardReleases = {
-        title: 'Releases',
-        text: 'Manage Releases',
+    homeCardTasks = {
+        title: 'Tasks',
+        text: 'Manage Tasks',
         action: () => hashHistory.push('/releases')
     }
-    homeCardBacklog = {
-        title: 'Backlog',
-        text: 'Manage Backlog',
-        action: () => hashHistory.push('/backlog')
+    homeCardLogin = {
+        title: 'Login',
+        text: 'Login Here',
+        action: () => hashHistory.push('/login')
     }
-    homeCardSprints = {
-        title: 'Sprints',
-        text: 'Manage Sprints',
-        action: () => hashHistory.push('/sprints')
+    homeCardSignup = {
+        title: 'Sign Up',
+        text: 'Create an Account',
+        action: () => hashHistory.push('/signup')
     }
 
     render() {
         return (
             <div className="container text-center">
                 <div className="row">
-                    <HomeCard title={this.homeCardReleases.title}
-                        text={this.homeCardReleases.text}
-                        action={this.homeCardReleases.action} />
-                    <HomeCard {...this.homeCardBacklog} />
-                    <HomeCard {...this.homeCardSprints} />
+                    <HomeCard title={this.homeCardTasks.title}
+                        text={this.homeCardTasks.text}
+                        action={this.homeCardTasks.action} />
+                    <HomeCard {...this.homeCardLogin} />
+                    <HomeCard {...this.homeCardSignup} />
                 </div>
             </div>
         );

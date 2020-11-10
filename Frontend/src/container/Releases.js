@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import 'w3-css/w3.css';
 import ReleaseForm from '../ui/ReleaseForm';
 
 export default class Releases extends Component {
@@ -59,6 +59,7 @@ export default class Releases extends Component {
 
     render() {
         return (
+          <div>
             <div className="container" style={{ paddingTop: '25px' }}>
                 <ReleaseForm submitHandler={this.handleSubmit} />
                 <table className="table table-hover">
@@ -89,7 +90,14 @@ export default class Releases extends Component {
 
                     </tbody>
                 </table>
+
             </div>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-round w3-blue" style={{width: '25%'}}></div>
+            </div>
+          </div>
+
         );
     }
+
 }

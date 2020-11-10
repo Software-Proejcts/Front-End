@@ -4,7 +4,7 @@ export default class Backlog extends Component {
 
     render() {
         return (
-            <h1>Backlog</h1>
+            <h1>Backlog</h1>  
         );
     }
 }
