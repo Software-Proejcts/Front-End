@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import {Link} from 'react-router';
-import Dropdown from 'react-dropdown';
 
 
-const defaultOption =Option[0];
+
+
 export default class SignUp extends Component {
     render() {
         return (
@@ -31,8 +31,13 @@ export default class SignUp extends Component {
                 </div>
 
                 <div className="form-group">
-                    <label>School</label>
-           
+                    <label for ="School">School</label><br></br>
+                    <select name="School" id="School">
+                    <option value="depaul">DePaul University</option>
+                    <option value="uic">UIC</option>
+                    <option value="loyola">Loyola University</option>
+                    <option value="northwestern">NorthWestern Universiy</option>
+                    </select>
                 </div>
 
                 <button type="submit" className="btn btn-dark btn-lg btn-block"><Link to="/signupt">Register</Link></button>
