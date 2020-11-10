@@ -4,7 +4,7 @@ export default class Sprints extends Component {
 
     render() {
         return (
-            <h1>Sprints</h1>
+            <h1>Page</h1>
         );
     }
 }

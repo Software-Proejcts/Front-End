@@ -11,31 +11,31 @@ const NavBar = (props) => {
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
-                
+
                     <li className="nav-item active">
-                        <Link to='/releases' className="nav-link">Releases</Link>
-                       
+                        <Link to='/releases' className="nav-link">Tasks</Link>
+
                     </li>
-                    
-                    
+
+
                     <li className="nav-item">
-                        <Link to='/backlog' className="nav-link">Backlog</Link>
+                        <Link to='/backlog' className="nav-link">Progress</Link>
                     </li>
-                    
+
                     <li className="nav-item">
-                        <Link to='/sprints' className="nav-link">Sprints</Link>
+                        <Link to='/sprints' className="nav-link">Page</Link>
                     </li>
- 
-        
+
+
                     <li className="nav-item">
                         <Link to='/login' className="nav-link">Login</Link>
                     </li>
-                    
-                   
+
+
                     <li className="nav-item">
                         <Link to='/signup' className="nav-link">Signup</Link>
                     </li>
-                    
+
                 </ul>
                 <form className="form-inline my-2 my-lg-0">
                     <input className="form-control mr-sm-2" type="text" placeholder="Search" />
