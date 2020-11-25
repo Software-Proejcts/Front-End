@@ -1,0 +1,33 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/server/index.js",
+  "private": true,
+  "author": "Dean Sellas, Hamza Ashraf",
+  "license": "ISC",
+  "scripts": {
+    "start": "node .",
+    "dev": "node -r dotenv/config src/server/index.js",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Software-Projects-1/Back-End.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Software-Projects-1/Back-End/issues"
+  },
+  "homepage": "https://github.com/Software-Projects-1/Back-End#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "gulp": "^4.0.2",
+    "mocha": "^8.1.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.2",
+    "password-hash": "^1.2.2"
+  }
+}
